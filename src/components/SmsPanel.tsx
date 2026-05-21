@@ -127,7 +127,7 @@ export const SmsPanel: React.FC = () => {
               <div className="space-y-1">
                 <label className="text-xs text-muted-foreground font-semibold uppercase tracking-wider">Parol</label>
                 <div className="relative">
-                  <input type={showPass ? 'text' : 'password'} placeholder="""""""""" value={smsSettings.password}
+                  <input type={showPass ? 'text' : 'password'} placeholder="********" value={smsSettings.password}
                     onChange={e => updateSmsSettings({ password: e.target.value })}
                     className="w-full bg-background/50 border border-border/80 rounded-xl px-4 py-2.5 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50" />
                   <button type="button" onClick={() => setShowPass(p => !p)}
