@@ -921,6 +921,6 @@ export const useShopStore = create<ShopState>((set, get) => ({
       console.error(e);
     }
   }
-})));
+}));
 
 
