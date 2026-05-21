@@ -53,6 +53,12 @@ const TreeNode: React.FC<TreeNodeProps> = ({ cat, allCats, depth, onAdd, onRemov
           <button onClick={() => onRemove(cat.id)} title="O'chirish"
             className="p-1 rounded-lg text-zinc-500 hover:text-red-400 hover:bg-red-500/10 transition">
             <Trash2 className="h-3.5 w-3.5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export const CategoryPanel: React.FC = () => {
   const { categories, addCategory, removeCategory, updateCategory } = useShopStore();
